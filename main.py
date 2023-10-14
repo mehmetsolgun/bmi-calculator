@@ -23,8 +23,10 @@ def clickbutton():
         if boy and kg == "":
             sonuc.config(text="Lütfen boyunuzu ve kilonuzu giriniz.")
 
-        if bmihesapla <= 18.5:
+        if 0 < bmihesapla <= 18.5:
             sonuc.config(text=f"V-K Endeksiniz: {bmihesapla:.2f}, Zayıf")
+        elif bmihesapla < 0:
+            sonuc.config(text="Lütfen kilo ve boyunuzu doğru giriniz.")
         elif 18.5 < bmihesapla < 25:
             sonuc.config(text=f"V-K Endeksiniz: {bmihesapla:.2f}, Normal kilolu ")
         elif 25 <= bmihesapla < 30:
