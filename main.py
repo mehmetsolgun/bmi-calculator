@@ -62,6 +62,10 @@ hesapla.pack()
 
 
 sonuc = Label(pady=10, font=("Arial", 15, "normal"))
+
 sonuc.pack()
+
+ben = Label(pady=30, text="Mehmet Solgun",font=("Chiller", 20, "normal"))
+ben.pack()
 
 window.mainloop()
